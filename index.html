@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-2by1">
+                            <img src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dGFibGUlMjB0ZW5uaXMlMjBiYXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Ping Pong Image">
+                        </figure>
+                    </div>
+                    <header class="card-header">
+                      <p class="card-header-title">
+                        Ping Pong Score Keeper
+                      </p>  
+                      <div>
+                        <p class="card-header-title">
+                            Sets Won  <span id="p1Won" style="padding-left:5px;"> 0 </span> - <span id="p2Won"> 0 </span>
+                          </p>  
+                      </div>
+                    </header>
+                    <div class="card-content">
+                        <h1 class = "title is-1"><span id = "p1Display">0</span> to <span id = "p2Display">0</span></h1>
+                        <p class="subtitle">Use the buttons below to keep score</p>
+
+                        <div style="display:inline-flex ;">
+                            <label for="playto" class="label is-large is-inline" style="padding-right: 5px;">Playing To</label>
+                            <div class="select is-rounded">
+                                <div>
+                                    <select name="" id="playto">
+                                        <option value="11"selected>11</option>
+                                        <option value="21">21</option>     
+                                    </select>
+                                </div>
+                            </div>
+                            <div style="padding: 0px 10px ;"></div>
+                            <label for="playto" class="label is-large is-inline" style="padding-right: 5px;">Number Of Sets</label>
+                            <div class="select is-rounded" style="display:inline-flex ;">
+                                <div>
+                                    <select name="" id="sets">
+                                        <option value="3"selected>3</option>
+                                        <option value="5">5</option>     
+                                        <option value="7">7</option>     
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <footer class="card-footer">
+                        <button id = "p1Button" class="is-primary button card-footer-item is-large">+1 Player One</button>  
+                        <button id = "p2Button" class="is-info button card-footer-item is-large">+1 Player Two</button>  
+                        <button id = "reset" class="is-danger button card-footer-item is-large">Reset</button>  
+                    </footer>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    
+    
+   
+
+    <script src="app.js"></script>
+</body>
+</html>
